@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+html {
+    min-height: 100%;
+}
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+}
+::selection {
+    background-color: #be7a3a;
+    color: #fdf5e6;
+}
+
+/* =========================
+    CONTENIDO PRINCIPAL
+========================= */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 0;
+}
+
+/* =========================
+    ALBUM
+========================= */
+#album-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 320px;
+    max-width: calc(100vw - 40px);
+    margin: auto;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+#album-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+#album-container .album-title {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    color: #222;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    line-height: 1.8;
+    text-align: justify;
+    text-align-last: justify;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+    padding: 0 12px;
+}
+
+#album-container .album-title:hover {
+    color: #be7a3a;
+}
+
+#album-container .btn-album {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 2px;
+    background: #be7a3a;
+    color: #fff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.25s ease,
+                transform 0.25s ease;
+}
+
+
+#album-container .btn-album:hover {
+    background: #523223;
+    transform: translateY(-2px);
+}

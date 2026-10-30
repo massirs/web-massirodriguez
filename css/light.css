@@ -1,0 +1,23 @@
+/* =========================
+    RESET GENERAL
+========================= */
+body{
+    background: #F7F0ED;
+    color: #523223;
+}
+a {
+    text-decoration: none;
+    color: #523223;
+}
+a:hover {
+    color: #be7a3a;
+}
+.menu-btn:hover, 
+.close-btn:hover, 
+.logo-mobile a:hover, 
+.overlay-links a:hover {
+    color: #be7a3a;
+}
+.menu-btn {
+    color: #523223;
+}

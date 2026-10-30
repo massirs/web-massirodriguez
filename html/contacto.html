@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/mr-icono.ico" type="image/x-icon">
+
+    <title>Massi Rodriguez - Contacto</title>
+
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/css/light.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- =========================
+         HEADER-MENU
+    ========================= -->
+    <div id="menu"></div>
+
+    <!-- =========================
+         LOGO
+    ========================= -->
+    <main class="main-content">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="/index.html">MASSI RODRIGUEZ</a>
+        </div>
+    </main>
+
+    <!-- =========================
+         CONTENIDO
+    ========================= -->
+     <main class="contacto">
+  
+
+    <div class="contenido">
+      <section>
+          <h1>CONTACTO</h1>
+        <form class="formulario"
+      action="https://formsubmit.co/info.massirodriguez@gmail.com"
+      method="POST">
+
+  <input type="hidden" name="_subject" value="Nuevo mensaje desde la web">
+  <input type="hidden" name="_captcha" value="true">
+
+  <div class="campo">
+    <label for="nombre">Nombre Completo*</label>
+    <input type="text" id="nombre" name="nombre" required>
+  </div>
+
+  <div class="campo">
+    <label for="correo">Correo electrónico*</label>
+    <input type="email" id="correo" name="email" required>
+  </div>
+
+  <div class="campo">
+    <label for="asunto">Asunto*</label>
+    <select id="asunto" name="asunto" required>
+      <option value="" selected disabled>Selecciona</option>
+      <option value="Consulta">Consulta</option>
+      <option value="Servicios">Booking</option>
+      <option value="Otro">Invitación de Iglesia</option>
+      <option value="Otro">Colaboración</option>
+      <option value="Otro">Entrevista / Podcast / Medios</option>
+      <option value="Otro">Otros</option>
+    </select>
+  </div>
+
+  <div class="campo">
+    <label for="mensaje">Mensaje*</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+  </div>
+
+  <button type="submit" class="enviar">ENVIAR</button>
+</form>
+
+        <div class="informacion">
+          <p>Información:</p>
+          <p><a href="mailto:info.massirodriguez@gmail.com" style="color: inherit; text-decoration: none;">info.massirodriguez@gmail.com</a></p>
+        </div>
+      </section>
+
+      <div class="imagen" aria-label="Espacio para una imagen">
+       <img src="/img/foto5.png" alt="Imagen de contacto">
+      
+      </div>
+    </div>
+  </main>
+    <!-- =========================
+         FOOTER
+    ========================= -->
+    <footer class="bottom-website">
+        <p> &copy; 2027 Massi Rodriguez. Todos los derechos reservados. </p>
+    </footer>
+
+    <!-- codigos js-->
+    <script src="/js/header-menu.js"></script>
+</body>
+</html>

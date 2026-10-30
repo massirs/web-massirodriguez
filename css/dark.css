@@ -1,0 +1,31 @@
+/* =========================
+    RESET GENERAL
+========================= */
+body{
+    background: #4a3423;
+    color: #F7F0ED;
+}
+a {
+    text-decoration: none;
+            color: #E3C3A5;
+}
+a:hover {
+    color: #fe9431ba;
+}
+.menu-btn:hover, 
+.close-btn:hover, 
+.logo-mobile a:hover, 
+.overlay-links a:hover {
+    color: #fe9431ba;
+}
+.menu-btn {
+    color: #E3C3A5;
+}
+.logo a{
+    color: #ffffff;
+    font-family: "Gaegu", sans-serif;
+}
+
+.logo a:hover {
+    color: #fe9431ba;
+}

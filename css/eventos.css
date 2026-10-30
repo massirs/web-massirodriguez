@@ -1,0 +1,116 @@
+#evento {
+    font-weight: 500;
+    color: #be7a3a;
+}
+/* -----Titulo de Evento-----*/
+.eventos h1 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    letter-spacing: 5px;
+    color: #E3C3A5;
+}
+
+/* -----Contendor Eventos-----*/
+.eventos {
+    width: 100%;
+    min-height: 75vh;
+    padding: 40px 4.05%;
+    font: 300 15px "Quicksand", sans-serif;
+    color: #F7F0ED;
+
+}
+
+.lista-eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.evento {
+    display: grid;
+    grid-template-columns: minmax(270px, 1fr) minmax(220px, 0.92fr) 156px;
+    align-items: center;
+    column-gap: 30px;
+    min-height: 70px;
+    padding: 20px 20px 20px 20px;
+    color: inherit;
+    text-decoration: none;
+    outline-offset: -3px;
+    font-size: 15px;
+}
+
+.evento:hover,
+.evento:focus-visible {
+    background: #58412f;
+}
+
+.detalles {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+    line-height: 1.35;
+}
+
+.fecha, .recinto, .ubicacion {
+    overflow-wrap: anywhere;
+}
+
+.ubicacion {
+    line-height: 1.35;
+}
+
+.boton-tickets {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    min-height: 20px;
+    padding: 10px 70px;
+    background: #cd7524;
+    color: #fff8f0;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+
+.boton-tickets:hover {
+    background: #9e5a1b;
+}
+
+@media (max-width: 800px) {
+    .ubicacion {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .evento {
+        grid-template-columns: 1fr auto;
+        column-gap: 14px;
+        row-gap: 10px;
+        padding: 30px 30px;
+        min-height: 0;
+    }
+
+    .boton-tickets {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        width: 110px;
+        min-height: 40px;
+    }
+
+    .eventos { 
+        padding: 30px 30px; 
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { 
+        transition: none !important; 
+    }
+}

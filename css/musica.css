@@ -1,0 +1,129 @@
+#musica {
+    font-weight: 500;
+    color: #be7a3a;
+}
+
+    :root {
+      --ink: #51402f;
+      --text: #62605e;
+      --muted: #85817e;
+      --button: #523223;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: 'Quicksand', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+
+    .page {
+      padding: 25px 50px 50px;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      color: var(--ink);
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 5px;
+      line-height: 1.35;
+    }
+
+    .music-layout {
+      display: grid;
+      grid-template-columns: minmax(280px, 40%) minmax(0, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .album-art {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .details { min-width: 0; }
+
+    .title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin: -5px 0 18px;
+    }
+
+    h2 {
+      margin: 0;
+      color: #be7a3a;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .listen-button {
+      display: inline-block;
+      flex: 0 0 auto;
+      padding: 6px 24px;
+      background: var(--button);
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      border-radius: 2px;
+      transition: background .2s ease;
+    }
+
+    
+    .listen-button:focus-visible { background: #523223; }
+
+    .listen-button:hover{
+      background-color: #be7a3a;
+      color:#523223;
+      font-weight: 400;
+    }
+    p { margin: 0 0 32px; }
+
+    h3 {
+      margin: 0;
+      color: #523223;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .tracklist {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 32px;
+    }
+
+    .tracklist li { margin: 0; }
+    .track-number, .track-name { color: #545454; font-weight: 400; }
+    .track-note { color: var(--muted); }
+
+    .credits p {
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 900px) {
+      .page { padding: 30px 30px 30px; }
+      .music-layout { grid-template-columns: 1fr; gap: 24px; }
+      .title-row { flex-wrap: wrap; margin-top: 0; }
+      .details p{font-family: 12px;}
+    }
+
+    @media (max-width: 600px) {
+      .page { padding-right: 30px; padding-left: 30 px; }
+      .title-row { align-items: flex-start; flex-direction: column; gap: 12px; }
+      .listen-button { padding: 8px 18px; }
+      .details{font-family: 10px;}
+    }
