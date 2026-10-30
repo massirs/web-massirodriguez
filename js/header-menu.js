@@ -15,7 +15,7 @@ const basePath = scriptPath
 // CARGAR MENÚ
 // ======================================
 
-fetch(`${basePath}/html/menu.html`)
+fetch(`${basePath}menu.html`)
 
     .then(response => {
         if (!response.ok) {
